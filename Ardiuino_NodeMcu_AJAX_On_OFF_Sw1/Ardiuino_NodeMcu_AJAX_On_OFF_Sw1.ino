@@ -3,16 +3,16 @@
 #include <LiquidCrystal_I2C.h>
 #include <TridentTD_LineNotify.h>
 
-const char* ssid = "true_home2G_68a";
-const char* password = "66fef68a";
-const char* host = "www.smartmushroomfarm.com";
+const char* ssid = "";
+const char* password = "";
+const char* host = "";
 String url2 = "/button1_proc.php";
 String url = url2;
 String id = "button1_stat";
 String value = "";
 
 #define RELAY1_PIN D6 // เปลี่ยนจาก D4 เป็น D2 (GPIO4)
-#define LINE_TOKEN "ZKu3jfkQpIZHeV8RnREWuxW24uDV5JXDuXwzi3xK4l8"
+#define LINE_TOKEN ""
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 unsigned long previousReconnectAttempt = 0;
